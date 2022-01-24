@@ -1,0 +1,15 @@
+$primary: #5927e5;
+$primaryDark: #3f29c5;
+$dark: #1e1650;
+$secondary: #ccf381;
+$accent: #f04290;
+// $accent:crimson;
+
+$light: rgba(255, 255, 255, 1);
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}

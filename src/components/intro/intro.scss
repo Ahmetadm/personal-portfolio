@@ -1,0 +1,137 @@
+@import "../../global.scss";
+
+.intro {
+  height: calc(100vh - 93px);
+  display: flex;
+  flex-direction: row-reverse;
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .right {
+    flex: 0.5;
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+    @include mobile {
+      height: 0%;
+      flex: 3;
+    }
+
+    .imgContainer {
+      width: 100%;
+      height: 100%;
+      background-color: $primary;
+      clip-path: polygon(
+        100% 0%,
+        100% 49%,
+        100% 100%,
+        25% 100%,
+        0% 50%,
+        25% 0%
+      );
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      z-index: -1;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      // float: right;
+      @include mobile {
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 80%;
+      }
+      img {
+        // height: 80%;
+        width: 100%;
+
+        @include mobile {
+          height: 50%;
+        }
+      }
+    }
+  }
+
+  .left {
+    flex: 0.5;
+    position: relative;
+    @include mobile {
+      justify-content: flex-start;
+      flex: 2;
+    }
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @include mobile {
+        padding-left: 0;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      h1 {
+        font-size: 80px;
+        margin: 0;
+        color: $primary;
+        @include mobile {
+          font-size: 40px;
+        }
+      }
+      h2 {
+        font-size: 35px;
+      }
+      h3 {
+        font-size: 30px;
+        @include mobile {
+          font-size: 20px;
+        }
+
+        span {
+          font-size: inherit;
+          color: $accent;
+        }
+        .ityped-cursor {
+          animation: blink 1s infinite;
+        }
+        @keyframes blink {
+          50% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+      }
+    }
+    a {
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: arrow 0.7s ease-in infinite alternate;
+
+      img {
+        width: 50px;
+      }
+      @keyframes arrow {
+        0% {
+          bottom: 20px;
+        }
+
+        100% {
+          bottom: 0px;
+        }
+      }
+    }
+  }
+}

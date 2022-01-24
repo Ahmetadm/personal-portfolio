@@ -1,0 +1,33 @@
+@import "../../global.scss";
+
+.t {
+  padding: 2px;
+  width: 50px;
+  height: 25px;
+  border-radius: 20px;
+  border: 1px solid $primary;
+  background-color: white;
+  position: fixed;
+  top: 25px;
+  right: 100px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.t-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.t-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $primary;
+  position: absolute;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}

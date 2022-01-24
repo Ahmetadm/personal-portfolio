@@ -1,0 +1,50 @@
+@import "../../global.scss";
+
+.projectList {
+  margin: 0 auto;
+  padding: 10px 0 200px;
+  min-height: 100vh;
+  border-left: 15px solid $accent;
+
+  .title {
+    text-align: center;
+    h2 {
+      font-size: 60px;
+      display: inline-block;
+
+      margin-bottom: 1em;
+      position: relative;
+      z-index: 2;
+      &::after {
+        content: "";
+        height: 10px;
+        width: 50%;
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        background-color: $accent;
+        transition: all 0.3s ease;
+        z-index: -1;
+      }
+      &:hover::after {
+        width: 80%;
+        height: 13px;
+      }
+    }
+  }
+  .container {
+    padding: 20px;
+    width: 85%;
+    margin: 0 auto;
+    // border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    @include mobile {
+      padding: 10px;
+      width: 90%;
+      grid-template-columns: 1fr;
+      //  justify-content:   flex-start;
+    }
+  }
+}

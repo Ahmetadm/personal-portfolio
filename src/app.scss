@@ -1,0 +1,34 @@
+@import "./global.scss";
+
+.app {
+  height: 100vh;
+  padding: 0;
+  color: $dark;
+  position: relative;
+  a {
+    color: $dark;
+  }
+
+  .sections {
+    width: 100%;
+    height: calc(100vh - 83px);
+
+    position: relative;
+    top: 83.333px;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    > * {
+      width: 100vw;
+      min-height: calc(100vh - 83.333px);
+      scroll-snap-align: start;
+    }
+    @include mobile {
+      scroll-snap-type: none;
+    }
+  }
+}

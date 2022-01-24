@@ -1,0 +1,119 @@
+@import "../../global.scss";
+.card-container {
+  position: relative;
+  overflow-x: visible;
+  /* width: 300px;
+      height: 500px; */
+}
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  /* background-color: rgb(23, 1, 49); */
+  background-color: white;
+
+  z-index: 4;
+  transition: all 0.3s ease;
+  border: 1px solid $accent;
+}
+.card-container:hover .card {
+  transform: translate(5px, -5px);
+}
+.card-container:hover .card-bg {
+  transform: translate(-5px, 5px);
+}
+.card-container:hover img {
+  top: -100%;
+}
+.image {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.imgage img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.card-bg {
+  position: absolute;
+  background-color: $primary;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.content {
+  padding: 20px;
+  h3 {
+    text-align: center;
+  }
+}
+.content p {
+  text-align: justify;
+}
+hr {
+  width: 40px;
+  border: 3px solid $primary;
+  margin: 15px auto;
+}
+
+.usedStacks {
+  margin: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+.stacks {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.stacks span {
+  display: inline-block;
+  background-color: $primary;
+  color: $light;
+  padding: 3px 7px;
+  font-size: 10px;
+}
+.stacks span:not(:last-child) {
+  margin-right: 10px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+  display: block;
+  padding: 5px 12px;
+  transition: all 0.3s ease;
+}
+.mainBtn {
+  border: 1px solid $accent;
+  color: $accent;
+}
+.mainBtn:hover {
+  background-color: $accent;
+  color: white;
+}
+.secondaryBtn {
+  color: $accent;
+  position: relative;
+}
+.secondaryBtn::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 2px;
+  width: 50%;
+  background-color: $accent;
+  transition: all 0.3s ease;
+}
+
+.secondaryBtn:hover::after {
+  width: 70%;
+}
