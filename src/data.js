@@ -32,7 +32,7 @@ export const myProjects = [
     description:
       "My personal portfolio website to provide professional information about an myself and presents a showcase of my projects. It also represents me in digital platform.",
     stacks: ["React", "Contex API", "SASS", "EmailJS"],
-    img: "project03.jpg",
+    img: "project03.png",
     demo: "https://www.ahmetadm.dev",
     code: "https://github.com/Ahmetadm/personal-portfolio",
   },
