@@ -21,7 +21,11 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
           </a>
 
           <div className="itemContainer">
-            <a href="http://instagram.com/ahmetadm" target="_blank">
+            <a
+              href="http://instagram.com/ahmetadm"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Instagram
                 className="s-icon"
                 style={{
@@ -31,7 +35,11 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
             </a>
           </div>
           <div className="itemContainer">
-            <a href="https://linkedin.com/in/ahmetadem" target="_blank">
+            <a
+              href="https://linkedin.com/in/ahmetadem"
+              target="_blank"
+              rel="noreferrer"
+            >
               <LinkedIn
                 className="s-icon"
                 style={{
@@ -41,7 +49,11 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
             </a>
           </div>
           <div className="itemContainer">
-            <a href="https://github.com/ahmetadm" target="_blank">
+            <a
+              href="https://github.com/ahmetadm"
+              target="_blank"
+              rel="noreferrer"
+            >
               <GitHub
                 className="s-icon"
                 style={{
