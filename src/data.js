@@ -5,7 +5,7 @@ export const myProjects = [
     description:
       "Brainster Labs is a project on which we will place all the projects Brainster students (Design Academy, Coding Academy, Marketing Academy) have made.",
     stacks: ["HTML", "Javascript", "SASS", "RegEx"],
-    img: "/project01.png",
+    img: "project01.png",
     demo: "https://ahmetadm-project01.netlify.app/",
     code: "https://gitlab.com/ahmetadm/brainsterprojects_ahmetademfe1/-/tree/Project01",
   },
@@ -22,7 +22,7 @@ export const myProjects = [
       "AJAX",
       "Web API - Media Devices -Camera",
     ],
-    img: "/project02.png",
+    img: "project02.png",
     demo: "https://ahmetadm-project02.netlify.app/app/index.html",
     code: "https://gitlab.com/ahmetadm/brainsterprojects_ahmetademfe1/-/tree/Project02",
   },
@@ -32,7 +32,7 @@ export const myProjects = [
     description:
       "My personal portfolio website to provide professional information about an myself and presents a showcase of my projects. It also represents me in digital platform.",
     stacks: ["React", "Contex API", "SASS", "EmailJS"],
-    img: "/project02.png",
+    img: "project03.png",
     demo: "https://www.ahmetadm.dev",
     code: "https://github.com/Ahmetadm/personal-portfolio",
   },
