@@ -5,7 +5,7 @@ import { useContext } from "react";
 
 const Menu = ({ menuOpen, setMenuOpen }) => {
   const theme = useContext(ThemeContext);
-  const darkMode = theme.state.darkMode;
+  // const darkMode = theme.state.darkMode;
   return (
     <div className={"menu " + (menuOpen && "active")}>
       <ul>
