@@ -20,7 +20,7 @@ function App() {
     if (localDarkMode === "true") {
       theme.dispatch({ type: "TOGGLE" });
     }
-  }, [theme]);
+  }, []);
 
   return (
     <div
