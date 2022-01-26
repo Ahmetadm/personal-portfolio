@@ -4,7 +4,7 @@
 
 ## Project Goal
 
-To create personal portfolio website to provide professional information about myself and present a showcase of my projects. It also represents me in digital platform.
+To create personal portfolio website in order to provide professional information about myself and present a showcase of my projects. It also represents me in digital platform.
 
 ## Challenges
 
