@@ -74,6 +74,7 @@
       justify-content: center;
 
       @include mobile {
+        margin-top: 15px;
         padding-left: 0;
         align-items: center;
         justify-content: flex-start;
@@ -84,11 +85,11 @@
         margin: 0;
         color: $primary;
         @include mobile {
-          font-size: 40px;
+          font-size: 30px;
         }
       }
       h2 {
-        font-size: 35px;
+        font-size: 25px;
       }
       h3 {
         font-size: 30px;
@@ -125,11 +126,11 @@
       }
       @keyframes arrow {
         0% {
-          bottom: 20px;
+          bottom: 40px;
         }
 
         100% {
-          bottom: 0px;
+          bottom: 20px;
         }
       }
     }
