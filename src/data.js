@@ -39,9 +39,9 @@ export const myProjects = [
 ];
 export const aboutMe = {
   p1: [
-    "I am Front-end developer with experience as Training and  Development Supervisor with a demonstrated history of working in the retail industry and  graduated from Balkan University - IT Department- in Skopje, Macedonia",
-    "After 9 years of working as Training and Development Supervisor in LC Waikiki International Retail, I decided to make a career switch  and to combine my Frontend Development skills with my Training skills. As per my proffesion, im passionate not only to learn new things, but to transfer my knowledge to other people as well.",
-    "If you are looking for a developer with high motivation, great communication skills and with high potential for being mentor of newcomers  in your company, Im the right person for you. Im excited to contribute, bring value to your company and do my best in order to achive your company's goals and vision.",
+    "Front-end developer with many years of experience as a Supervisor for training and development in the retail industry and a graduate IT engineer",
+    "After 7 years working as a training and development supervisor at LC Waikiki International Retail, I decided to make a career change so that I could combine my Front-end programming skills with my training and development skills and experience. As a personality, I am passionate not only about learning new things, but also about passing on my knowledge to other people.",
+    "If you are looking for a developer with high motivation, great communication skills with high potential for being the mentor of newcomers in your company, I'm the right person for you. I'm excited to contribute, bring value to your company and do my best to achieve your company's goals and vision.",
     "Technologies i am using:",
   ],
   stacks: [
