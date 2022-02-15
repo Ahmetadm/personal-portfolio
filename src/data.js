@@ -1,3 +1,8 @@
+import Linkedin from "./img/linkedin.png";
+import Github from "./img/github.png";
+import Gitlab from "./img/gitlab.png";
+import Phone from "./img/phone.png";
+import Email from "./img/email.png";
 export const myProjects = [
   {
     id: "1",
@@ -58,3 +63,36 @@ export const aboutMe = {
     "Styled-Components",
   ],
 };
+
+export const contactInfo = [
+  {
+    id: "c1",
+    link: "tel:+38972321268",
+    text: "+389 72 321 268",
+    img: Phone,
+  },
+  {
+    id: "c2",
+    link: "mailto:contact@ahmetadm.dev",
+    text: "contact@ahmetadm.dev",
+    img: Email,
+  },
+  {
+    id: "c3",
+    link: "https://linkedin.com/in/ahmetadem",
+    text: "linkedin/ahmetadem",
+    img: Linkedin,
+  },
+  {
+    id: "c4",
+    link: "https://github.com/ahmetadm",
+    text: "github/ahmetadm",
+    img: Github,
+  },
+  {
+    id: "c5",
+    link: "https://gitlab.com/ahmetadm",
+    text: "gitlab/ahmetadm",
+    img: Gitlab,
+  },
+];

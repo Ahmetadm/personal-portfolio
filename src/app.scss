@@ -11,12 +11,12 @@
 
   .sections {
     width: 100%;
-    height: calc(100vh - 83px);
+    height: calc(100vh - 93px);
 
     position: relative;
     top: 83.333px;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: none;
     scrollbar-width: none;
     &::-webkit-scrollbar {
       display: none;

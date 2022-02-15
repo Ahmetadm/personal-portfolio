@@ -1,14 +1,8 @@
 import "./contact.scss";
-import Phone from "../../img/phone.png";
-import Email from "../../img/email.png";
-
 import { useContext, useRef, useState } from "react";
-import Instagram from "../../img/instagram.png";
-import Linkedin from "../../img/linkedin.png";
-import Github from "../../img/github.png";
 import { ThemeContext } from "../../context";
 import emailjs from "emailjs-com";
-
+import { contactInfo } from "../../data";
 const Contact = () => {
   const formRef = useRef();
   const [done, setDone] = useState(false);
@@ -43,63 +37,21 @@ const Contact = () => {
         <div className="c-left">
           <h2 className="c-title">Let's discuss your project</h2>
           <div className="c-info">
-            <div className="c-info-item">
-              <img src={Phone} alt="" className="c-icon" />
-              <a
-                href="tel:+38972321268"
-                style={{
-                  color: darkMode && "white",
-                }}
-              >
-                +389 72 321 268
-              </a>
-            </div>
-
-            <div className="c-info-item">
-              <img className="c-icon" src={Email} alt="" />
-              <a
-                href="mailto:contact@ahmetadm.dev"
-                style={{
-                  color: darkMode && "white",
-                }}
-              >
-                contact@ahmetadm.dev
-              </a>
-            </div>
-            <div className="c-info-item">
-              <img className="c-icon" src={Linkedin} alt="" />
-              <a
-                href="https://linkedin.com/in/ahmetadem"
-                style={{
-                  color: darkMode && "white",
-                }}
-              >
-                linkedin/ahmetadem
-              </a>
-            </div>
-            <div className="c-info-item">
-              <img className="c-icon" src={Github} alt="" />
-              <a
-                href="https://github.com/ahmetadm"
-                style={{
-                  color: darkMode && "white",
-                }}
-              >
-                github/ahmetadm
-              </a>
-            </div>
-
-            <div className="c-info-item">
-              <img className="c-icon" src={Instagram} alt="" />
-              <a
-                href="https://Instagram.com/ahmetadm"
-                style={{
-                  color: darkMode && "white",
-                }}
-              >
-                instagram/ahmetadm
-              </a>
-            </div>
+            {contactInfo.map((item) => (
+              <div key={item.id} className="c-info-item">
+                <img className="c-icon" src={item.img} alt="" />
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  style={{
+                    color: darkMode && "white",
+                  }}
+                >
+                  {item.text}
+                </a>
+              </div>
+            ))}
           </div>
         </div>
         <div className="c-right">
