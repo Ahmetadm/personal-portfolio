@@ -65,8 +65,10 @@ export const myProjects = [
 export const aboutMe = {
   p1: [
     "Front-end developer with many years of experience as a Supervisor for training and development in the retail industry and a graduate IT engineer",
-    "After 7 years working as a training and development supervisor at LC Waikiki International Retail, I decided to make a career change so that I could combine my Front-end programming skills with my training and development skills and experience. As a personality, I am passionate not only about learning new things, but also about passing on my knowledge to other people.",
-    "If you are looking for a developer with high motivation, great communication skills with high potential for being the mentor of newcomers in your company, I'm the right person for you. I'm excited to contribute, bring value to your company and do my best to achieve your company's goals and vision.",
+    "After working for 7 years as a training and development supervisor at LC Waikiki International Retail, I decided to make a career change and pursue my passion for programming. For the last year, I have been working at Pabau, an enterprise-level CRM software for clinics, as a React developer. In my role, I have worked on both the frontend and backend parts of the project, with a focus on the Analytics and Reports feature. Additionally, I had the opportunity to lead a group of internship employees during my time at Pabau, helping to guide them and share my knowledge and experience with them.",
+    "I have experience with a range of technologies, including NextJS, TypeScript, Node.js, GraphQL, Hasura, SQL, and NestJS. This experience has allowed me to develop my skills as a developer and to contribute to a project that has a real impact on people's lives.",
+    "In addition to my work at Pabau, I'm also an instructor at Brainster, where I teach people how to code and help them develop the skills they need to succeed in the tech industry. This experience has allowed me to share my passion for coding with others and to help people from all backgrounds learn this valuable skill.",
+    "As someone who is passionate about learning new things and passing on knowledge to others, I'm excited to bring my experience and skills to your company. Whether you're looking for a developer who can help mentor newcomers, someone who can bring a fresh perspective to your team, or an instructor who can help train your employees, I'm ready to contribute and help you achieve your goals. With my experience working on both the frontend and backend parts of the Pabau project, as well as my leadership experience, I can bring a unique perspective and valuable skills to your team.",
     "Technologies i am using:",
   ],
   stacks: [
@@ -88,6 +90,7 @@ export const aboutMe = {
     "Tailwind CSS",
     "GraphQL",
     "Styled-Components",
+    "Cypress",
   ],
 };
 
