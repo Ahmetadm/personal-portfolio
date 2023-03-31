@@ -10,17 +10,19 @@ const ProjectList = () => {
           <h2>My Projects</h2>
         </div>
         <div className="container">
-          {myProjects.map((project) => (
-            <Project
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              img={project.img}
-              demo={project.demo}
-              code={project.code}
-              stacks={project.stacks}
-            />
-          ))}
+          {myProjects
+            .sort((a, b) => (b.id < a.id ? -1 : b.id > a.id ? 1 : 0))
+            .map((project) => (
+              <Project
+                key={project.id}
+                title={project.title}
+                description={project.description}
+                img={project.img}
+                demo={project.demo}
+                code={project.code}
+                stacks={project.stacks}
+              />
+            ))}
         </div>
       </div>
     </div>
