@@ -58,7 +58,7 @@ export const myProjects = [
       "LESS",
       "Cypress",
     ],
-    img: "project04.jpg",
+    img: "project04.png",
     demo: "https://www.ahmetadm.dev",
   },
 ];

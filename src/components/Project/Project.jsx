@@ -40,17 +40,19 @@ const Project = ({ title, description, demo, img, code, stacks }) => {
             >
               view Page
             </a>
-            <a
-              href={code}
-              target="_blank"
-              rel="noreferrer"
-              className="secondaryBtn"
-              style={{
-                color: darkMode && "white",
-              }}
-            >
-              view code
-            </a>
+            {code && (
+              <a
+                href={code}
+                target="_blank"
+                rel="noreferrer"
+                className="secondaryBtn"
+                style={{
+                  color: darkMode && "white",
+                }}
+              >
+                view code
+              </a>
+            )}
           </div>
         </div>
       </div>

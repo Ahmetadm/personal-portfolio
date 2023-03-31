@@ -40,6 +40,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
+    justify-content: center;
     @include mobile {
       padding: 10px;
       width: 90%;
