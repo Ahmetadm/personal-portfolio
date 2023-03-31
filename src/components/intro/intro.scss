@@ -23,15 +23,22 @@
     .imgContainer {
       width: 100%;
       height: 100%;
-      background-color: $primary;
-      clip-path: polygon(
-        100% 0%,
-        100% 49%,
-        100% 100%,
-        25% 100%,
-        0% 50%,
-        25% 0%
+      background: #ff0099;
+      background-image: linear-gradient(
+        45deg,
+        $primary 0%,
+        $primaryDark 40%,
+        $accent 100%
       );
+      // clip-path: polygon(
+      //   100% 0%,
+      //   100% 49%,
+      //   100% 100%,
+      //   25% 100%,
+      //   0% 50%,
+      //   25% 0%
+      // );
+      border-radius: 73% 27% 37% 63% / 39% 37% 63% 61%;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -41,6 +48,7 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
+      transition: all 0.5s ease;
       // float: right;
       @include mobile {
         align-items: flex-start;
@@ -55,6 +63,9 @@
           height: 50%;
         }
       }
+    }
+    &:hover .imgContainer {
+      border-radius: 31% 69% 69% 31% / 53% 51% 49% 47%;
     }
   }
 

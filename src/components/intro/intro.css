@@ -1,0 +1,137 @@
+.intro {
+  height: calc(100vh - 93px);
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media (max-width: 768px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+.intro .right {
+  flex: 0.5;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+@media (max-width: 768px) {
+  .intro .right {
+    height: 0%;
+    flex: 3;
+  }
+}
+.intro .right .imgContainer {
+  width: 100%;
+  height: 100%;
+  background: #ff0099;
+  background-image: linear-gradient(45deg, #5927e5 0%, #3f29c5 40%, #f04290 100%);
+  border-radius: 73% 27% 37% 63%/39% 37% 63% 61%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  transition: all 0.5s ease;
+}
+@media (max-width: 768px) {
+  .intro .right .imgContainer {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+  }
+}
+.intro .right .imgContainer img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .intro .right .imgContainer img {
+    height: 50%;
+  }
+}
+.intro .right:hover .imgContainer {
+  border-radius: 31% 69% 69% 31%/53% 51% 49% 47%;
+}
+.intro .left {
+  flex: 0.5;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .intro .left {
+    justify-content: flex-start;
+    flex: 2;
+  }
+}
+.intro .left .wrapper {
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .intro .left .wrapper {
+    padding-left: 0;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+.intro .left .wrapper h1 {
+  font-size: 80px;
+  margin: 0;
+  color: #5927e5;
+}
+@media (max-width: 768px) {
+  .intro .left .wrapper h1 {
+    font-size: 40px;
+  }
+}
+.intro .left .wrapper h2 {
+  font-size: 35px;
+}
+.intro .left .wrapper h3 {
+  font-size: 30px;
+}
+@media (max-width: 768px) {
+  .intro .left .wrapper h3 {
+    font-size: 20px;
+  }
+}
+.intro .left .wrapper h3 span {
+  font-size: inherit;
+  color: #f04290;
+}
+.intro .left .wrapper h3 .ityped-cursor {
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.intro .left a {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: arrow 0.7s ease-in infinite alternate;
+}
+.intro .left a img {
+  width: 50px;
+}
+@keyframes arrow {
+  0% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 20px;
+  }
+}/*# sourceMappingURL=intro.css.map */
