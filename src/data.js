@@ -41,6 +41,26 @@ export const myProjects = [
     demo: "https://www.ahmetadm.dev",
     code: "https://github.com/Ahmetadm/personal-portfolio",
   },
+  {
+    id: "4",
+    title: "Pabau CRM",
+    description:
+      "A enterprise level CRM software for clinics to manage their bussiness. Bells and whistles included. Worked both on frontend and backend part of the project. I mainly worked on Analytics and Reports part.",
+    stacks: [
+      "Typescript",
+      "NextJS",
+      "NodeJS",
+      "MySQL",
+      "GraphQL",
+      "Hasura",
+      "Prisma",
+      "Ant Design",
+      "LESS",
+      "Cypress",
+    ],
+    img: "project04.jpg",
+    demo: "https://www.ahmetadm.dev",
+  },
 ];
 export const aboutMe = {
   p1: [
@@ -54,6 +74,13 @@ export const aboutMe = {
     "CSS",
     "Sass",
     "Javascript",
+    "Typescript",
+    "SQL",
+    "NodeJS",
+    "NESTJS",
+    "Hasura",
+    "Ant Design",
+    "Prisma",
     "React",
     "Next.js",
     "Bootstrap",
