@@ -11,23 +11,16 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_tcoi62z",
-        "template_zaquecs",
-        formRef.current,
-        "user_VccaDyk6t4T4qvGWPVJD5"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setDone(true);
-          formRef.current.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm("service_9ff1pak", "template_zaquecs", formRef.current, "user_VccaDyk6t4T4qvGWPVJD5").then(
+      result => {
+        console.log(result.text);
+        setDone(true);
+        formRef.current.reset();
+      },
+      error => {
+        console.log(error.text);
+      }
+    );
   };
 
   return (
