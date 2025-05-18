@@ -1,31 +1,33 @@
 .app {
   height: 100vh;
-  padding: 0;
-  color: #1e1650;
-  position: relative;
 }
-.app a {
-  color: #1e1650;
-}
+
 .app .sections {
   width: 100%;
   height: calc(100vh - 93px);
+
   position: relative;
   top: 83.333px;
   scroll-behavior: smooth;
-  scroll-snap-type: none;
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
   scrollbar-width: none;
 }
-.app .sections::-webkit-scrollbar {
+
+.app *::-webkit-scrollbar {
   display: none;
 }
+
 .app .sections > * {
   width: 100vw;
-  min-height: calc(100vh - 83.333px);
+  height: calc(100vh - 83.333px);
   scroll-snap-align: start;
 }
+
 @media (max-width: 768px) {
   .app .sections {
+    -ms-scroll-snap-type: none;
     scroll-snap-type: none;
   }
-}/*# sourceMappingURL=app.css.map */
+}
+/*# sourceMappingURL=app.css.map */
