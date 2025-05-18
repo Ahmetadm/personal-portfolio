@@ -1,7 +1,7 @@
 import "./contact.scss";
 import { useContext, useRef, useState } from "react";
 import { ThemeContext } from "../../context";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import { contactInfo } from "../../data";
 const Contact = () => {
   const formRef = useRef();
@@ -37,7 +37,7 @@ const Contact = () => {
         <div className="c-left">
           <h2 className="c-title">Let's discuss your project</h2>
           <div className="c-info">
-            {contactInfo.map((item) => (
+            {contactInfo.map(item => (
               <div key={item.id} className="c-info-item">
                 <img className="c-icon" src={item.img} alt="" />
                 <a
@@ -56,8 +56,7 @@ const Contact = () => {
         </div>
         <div className="c-right">
           <p className="c-desc">
-            <b>What’s your story?</b> Get in touch. Always available for
-            freelancing if the right project comes along. me.
+            <b>What's your story?</b> Get in touch. Always available for freelancing if the right project comes along. me.
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
             <input
@@ -102,11 +101,7 @@ const Contact = () => {
               name="message"
               required
             />
-            {done && (
-              <p style={{ marginBottom: "10px", color: "green" }}>
-                Thank you for your message, I will reply as soon as possible
-              </p>
-            )}
+            {done && <p style={{ marginBottom: "10px", color: "green" }}>Thank you for your message, I will reply as soon as possible</p>}
             <button>Submit</button>
           </form>
         </div>

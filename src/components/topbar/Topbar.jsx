@@ -1,5 +1,5 @@
 import "./topbar.scss";
-import { Instagram, GitHub, LinkedIn } from "@material-ui/icons";
+import { Instagram, GitHub, LinkedIn } from "@mui/icons-material";
 import { ThemeContext } from "../../context";
 import { useContext } from "react";
 
