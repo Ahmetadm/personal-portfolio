@@ -7,8 +7,7 @@ export const myProjects = [
   {
     id: "1",
     title: "Brainster Labs",
-    description:
-      "Brainster Labs is a project on which we will place all the projects Brainster students (Design Academy, Coding Academy, Marketing Academy) have made.",
+    description: "Brainster Labs is a project on which we will place all the projects Brainster students (Design Academy, Coding Academy, Marketing Academy) have made.",
     stacks: ["HTML", "Javascript", "SASS", "RegEx"],
     img: "project01.png",
     demo: "https://ahmetadm-project01.netlify.app/",
@@ -17,16 +16,8 @@ export const myProjects = [
   {
     id: "2",
     title: "Street ARTists",
-    description:
-      "Mobile web space for every street artist that will allow them to be able to track their income, and to have a place on the web where they can showcase their masterpieces.",
-    stacks: [
-      "HTML",
-      "Javascript",
-      "SASS",
-      "ChartJS",
-      "AJAX",
-      "Web API - Media Devices -Camera",
-    ],
+    description: "Mobile web space for every street artist that will allow them to be able to track their income, and to have a place on the web where they can showcase their masterpieces.",
+    stacks: ["HTML", "Javascript", "SASS", "ChartJS", "AJAX", "Web API - Media Devices -Camera"],
     img: "project02.png",
     demo: "https://ahmetadm-project02.netlify.app/app/index.html",
     code: "https://gitlab.com/ahmetadm/brainsterprojects_ahmetademfe1/-/tree/Project02",
@@ -34,8 +25,7 @@ export const myProjects = [
   {
     id: "3",
     title: "This Awesome Portfolio",
-    description:
-      "My personal portfolio website to provide professional information about an myself and presents a showcase of my projects. It also represents me in digital platform.",
+    description: "My personal portfolio website to provide professional information about an myself and presents a showcase of my projects. It also represents me in digital platform.",
     stacks: ["React", "Contex API", "SASS", "EmailJS"],
     img: "project03.png",
     demo: "https://www.ahmetadm.dev",
@@ -44,22 +34,27 @@ export const myProjects = [
   {
     id: "4",
     title: "Pabau CRM",
-    description:
-      "A enterprise level CRM software for clinics to manage their bussiness. Bells and whistles included. Worked both on frontend and backend part of the project. I mainly worked on Analytics and Reports part.",
-    stacks: [
-      "Typescript",
-      "NextJS",
-      "NodeJS",
-      "MySQL",
-      "GraphQL",
-      "Hasura",
-      "Prisma",
-      "Ant Design",
-      "LESS",
-      "Cypress",
-    ],
+    description: "A enterprise level CRM software for clinics to manage their bussiness. Bells and whistles included. Worked both on frontend and backend part of the project. I mainly worked on Analytics and Reports part.",
+    stacks: ["Typescript", "NextJS", "NodeJS", "MySQL", "GraphQL", "Hasura", "Prisma", "Ant Design", "LESS", "Cypress"],
     img: "project04.png",
-    demo: "https://www.ahmetadm.dev",
+    demo: "https://pabau.com/",
+  },
+  {
+    id: "5",
+    title: "Aduvi – Business Management Platform",
+    description: "Aduvi is an all-in-one solution for managing leads, bookings, events, custom forms, and client communication through a dedicated portal. I worked on the frontend team, focusing on building responsive, user-friendly interfaces and ensuring a smooth user experience across the platform.",
+    stacks: ["Typescript", "React", "Google Maps API", "Redux", "Ant Design", "SASS"],
+    img: "project05.png",
+    demo: "https://aduvi.com/",
+  },
+  {
+    id: "6",
+    title: "Turbofolio",
+    description: "Turbofolio is a portfolio builder platform tailored for developers and designers who want a fast, no-code solution to create stunning and SEO optimized online portfolios. Through a user-friendly dashboard, users can add projects, skills, and personal details, customize their portfolio with modern themes, and receive messages directly from visitors.",
+    stacks: ["Typescript", "Nextjs", "Prisma", "PostgreSQL", "Tailwind", "Paypal Integration"],
+    img: "project06.png",
+    demo: "https://development.turbofolio.dev",
+    code: "https://development.turbofolio.dev/ahmetadm",
   },
 ];
 export const aboutMe = {
@@ -71,27 +66,7 @@ export const aboutMe = {
     "As someone who is passionate about learning new things and passing on knowledge to others, I'm excited to bring my experience and skills to your company. Whether you're looking for a developer who can help mentor newcomers, someone who can bring a fresh perspective to your team, or an instructor who can help train your employees, I'm ready to contribute and help you achieve your goals. With my experience working on both the frontend and backend parts of the Pabau project, as well as my leadership experience, I can bring a unique perspective and valuable skills to your team.",
     "Technologies i am using:",
   ],
-  stacks: [
-    "HTML",
-    "CSS",
-    "Sass",
-    "Javascript",
-    "Typescript",
-    "SQL",
-    "NodeJS",
-    "NESTJS",
-    "Hasura",
-    "Ant Design",
-    "Prisma",
-    "React",
-    "Next.js",
-    "Bootstrap",
-    "MUI",
-    "Tailwind CSS",
-    "GraphQL",
-    "Styled-Components",
-    "Cypress",
-  ],
+  stacks: ["HTML", "CSS", "Sass", "Javascript", "Typescript", "SQL", "NodeJS", "NESTJS", "Hasura", "Ant Design", "Prisma", "React", "Next.js", "Bootstrap", "MUI", "Tailwind CSS", "GraphQL", "Styled-Components", "Cypress"],
 };
 
 export const contactInfo = [
