@@ -53,8 +53,8 @@ export const myProjects = [
     description: "Turbofolio is a portfolio builder platform tailored for developers and designers who want a fast, no-code solution to create stunning and SEO optimized online portfolios. Through a user-friendly dashboard, users can add projects, skills, and personal details, customize their portfolio with modern themes, and receive messages directly from visitors.",
     stacks: ["Typescript", "Nextjs", "Prisma", "PostgreSQL", "Tailwind", "Paypal Integration"],
     img: "project06.png",
-    demo: "https://development.turbofolio.dev",
-    code: "https://development.turbofolio.dev/ahmetadm",
+    demo: "https://www.turbofolio.dev",
+    code: "https://turbofolio.dev/ahmetadm",
   },
 ];
 export const aboutMe = {
